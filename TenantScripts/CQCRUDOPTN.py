@@ -6076,7 +6076,7 @@ class ContractQuoteCoveredObjModel(ContractQuoteCrudOpertion):
                         table_total_rows = table_count_data.count
                     if table_total_rows:
                         record_ids = [data for data in self.get_results(query_string, table_total_rows)]    
-                        Trace.Write("record_ids_yield---- "+str(record_ids))                
+                        Trace.Write("record_ids_yield--- "+str(record_ids))                
                 else:
                     record_ids = [
                         CPQID.KeyCPQId.GetKEYId(master_object_name, str(value))
